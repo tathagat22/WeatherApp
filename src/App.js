@@ -19,7 +19,7 @@ const App = () => {
     setError("");
 
     try {
-      const response = await axios.post("https://purpledeterminedequipment.tathagatmaitra1.repl.co/getWeather", {
+      const response = await axios.post("https://xiv-backend.onrender.com/getWeather", {
         cities: cities.split(","),
       });
       setWeather(response.data.weather);
